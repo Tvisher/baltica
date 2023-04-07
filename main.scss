@@ -1,4 +1,5 @@
 .command-grid {
+    margin: 40px 0;
     display: grid;
     gap: 15px;
     margin: auto;
@@ -60,6 +61,7 @@
 
 
 .grid-item__modal {
+    overflow: auto;
     opacity: 0;
     visibility: hidden;
     transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
@@ -78,11 +80,13 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 20px;
 
     .item-modal__content {
+        margin-top: auto;
+        margin-bottom: auto;
+        height: fit-content;
         position: relative;
         max-width: 750px;
         width: 1000%;
@@ -190,10 +194,10 @@
 
     .grid-item__image {
         position: absolute;
-        left: -1px;
-        top: -1px;
-        right: -1px;
-        bottom: -1px;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
 
         img {
             will-change: transform;
@@ -400,8 +404,6 @@
         }
     }
 
-
-
     .command-grid__item {
         border-radius: 20px !important;
 
@@ -506,5 +508,48 @@
             grid-row: 19/21;
         }
 
+    }
+
+    .grid-item__modal .item-modal__content {
+        padding: 20px;
+    }
+
+    .grid-item__modal .item-modal__content-wrapper {
+        flex-direction: column;
+    }
+
+    .grid-item__modal .item-modal__image {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 125px;
+        height: 200px;
+    }
+
+    .grid-item__modal .item-modal__title {
+        font-size: 20px;
+    }
+
+    .grid-item__modal .item-modal__descr {
+        font-size: 12px;
+    }
+
+    .grid-item__modal .item-modal__job-title {
+        font-size: 12px;
+        margin-bottom: 13px;
+    }
+
+    .grid-item__modal .item-modal__text {
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+
+    .grid-item__modal .item-modal__love-berr {
+        font-size: 12px;
+    }
+
+    .grid-item__modal .item-modal__data:before {
+        bottom: 0;
+        width: 40px;
+        height: 30px;
     }
 }
