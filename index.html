@@ -210,6 +210,41 @@
                 </div>
             </div>
         </div>
+        <div class="grid-item__modal" data-grd-modal="1">
+            <div class="item-modal__content">
+                <div class="item-modal__close"></div>
+                <div class="item-modal__content-wrapper">
+                    <div class="item-modal__image">
+                        <img src="./img/modals/g-modal-5.jpg" alt="">
+                    </div>
+                    <div class="item-modal__data">
+                        <div class="item-modal__title">Екатерина Владимирова </div>
+                        <div class="item-modal__descr">Техник-технолог 1-й категории</div>
+                        <div class="item-modal__job-title">Отвечаю за качество упаковки</div>
+                        <div class="item-modal__text">
+                            Я&nbsp;работаю на&nbsp;самой финишной прямой нашего производства&nbsp;&mdash;
+                            на&nbsp;этикетировочном автомате линии &laquo;ПЭТ&raquo;. До&nbsp;этого работала
+                            на&nbsp;этикетировочном автомате линии &laquo;Стекло&raquo;, потом была линия
+                            &laquo;ПЭТ&raquo;: этикетировка, розлив, термоупаковка. Затем&nbsp;&mdash; розлив
+                            линии &laquo;Банка&raquo;. А&nbsp;начинала трудовую деятельность на&nbsp;заводе
+                            с&nbsp;мойщицы оборудования. Обучение проходила без отрыва от&nbsp;работы, прямо
+                            на&nbsp;&laquo;Балтике&raquo;.
+                            <br>
+                            <br>
+                            Кажется, будто наклеить этикетку&nbsp;&mdash; не&nbsp;самая важная задача. Но,
+                            во-первых, упаковка&nbsp;&mdash; лицо товара. Потребитель изначально обращает
+                            внимание именно на&nbsp;упаковку. Что касается оборудования по&nbsp;розливу,
+                            то&nbsp;от&nbsp;правильно соблюденной технологии напрямую зависит качество напитка.
+                        </div>
+                        <div class="item-modal__love-berr">
+                            Любимое пиво: S&R's Garage><br>
+                            и «Балтика 7 Мягкое»
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="grid-item__modal" data-grd-modal="5">
             <div class="item-modal__content">
                 <div class="item-modal__close"></div>
@@ -251,7 +286,7 @@
                 if (target.closest('[data-grd-item]')) {
                     const targetId = target.closest('[data-grd-item]').dataset.grdItem;
                     const currentModal = document.querySelector(`[data-grd-modal="${targetId}"]`);
-                    currentModal.classList.add('show');
+                    currentModal && currentModal.classList.add('show');
                 }
 
                 if (target.closest('.item-modal__close')
