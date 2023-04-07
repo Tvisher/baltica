@@ -1,8 +1,9 @@
 .command-grid {
-    margin: 40px 0;
     display: grid;
     gap: 15px;
     margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
     width: fit-content;
     grid-template-columns: repeat(4, 223px);
     grid-template-rows: repeat(10, 223px);
